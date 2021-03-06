@@ -1,0 +1,491 @@
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+
+    font-size: 16px;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+
+}
+
+
+p {
+
+    padding: 1rem;
+    font-size: 1em;
+    line-height: 1.45;
+
+}
+
+img {
+
+    width: 25%;
+
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+
+
+header {
+
+    padding: 3rem 1rem;
+    color: black;
+    height: 270px;
+    background: url(../img/placeimg_1000_350_nature.jpg);
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 12px;*/
+    border-top: 10px solid rgb(222, 123, 74);
+}
+
+
+
+header > h1 {
+
+    font-size: 4rem;
+    color: rgb(53, 56, 59);
+
+}
+
+header > h2 {
+
+
+    font-size: 3rem;
+    color: rgb(53, 56, 59);
+}
+
+/*************************************************
+            NAVMENU
+*************************************************/
+nav {
+
+    padding: 0.7rem 2rem;
+
+
+}
+
+.container {
+
+    padding: 9px;
+}
+
+.mainnav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E8E8E8;
+    margin: auto;
+
+
+}
+
+nav > a,
+nav > a:visited,
+nav > a:link {
+
+    color: hsl(210, 5%, 22%);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+}
+
+nav > a:active,
+nav > a:focus,
+nav > a:hover {
+
+    color: rgb(222, 123, 74);
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main {
+margin: 0px;
+    
+    padding: 0rem 0rem;
+    border-bottom: 10px solid rgb(222, 123, 74);
+    /*    hsla(20, 93%, 76%, 0.93)*/
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+.container{
+    
+    padding: 0px;
+    margin:0px;
+    
+}
+
+section {
+
+    clear: both;
+    width: 100%;
+
+}
+
+
+
+section > h1 {
+
+    font-size: 1.602em;
+    padding-left: 17px;
+    color: hsl(20, 69%, 58%);
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+section > h2 {
+
+    font-size: 1.424rem;
+    padding-left: 17px;
+    color: rgb(222, 123, 74);
+
+
+    margin: 1.714em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+
+}
+
+section p {
+
+
+    font-size: 1rem;
+    padding: 1.2rem;
+
+    line-height: 1.45;
+    text-align: justify;
+}
+
+section p img {
+
+
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+
+
+}
+
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer {
+
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #E8E8E8;
+
+}
+
+
+
+.foot nav {
+
+    margin: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.foot section {
+
+
+    padding: 1rem;
+    margin-top: 1rem;
+    line-height: 40px;
+    width: 70%;
+
+
+}
+
+.foot dl {
+
+    margin-right: 3rem;
+}
+
+.foot dt {
+    color: rgba(53, 56, 59, 1);
+    font-size: 1.266em;
+}
+
+.foot dd {
+
+    font-size: 0.889em;
+}
+
+.foot dd a,
+.foot dd a:visited {
+    text-decoration: none;
+    color: rgba(53, 56, 59, 1);
+}
+
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover {
+    text-decoration: underline;
+}
+
+
+.comments {
+
+    margin: 1rem auto;
+    margin: 1rem auto;
+
+
+}
+
+
+
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px) {
+
+
+    img {
+
+        width: 50%;
+
+    }
+
+
+    header > h1 {
+
+        font-size: 4rem;
+        color: rgba(53, 56, 59, 1);
+
+    }
+
+    header > h2 {
+
+
+        font-size: 3rem;
+        color: rgba(53, 56, 59, 1);
+    }
+
+
+    header {
+
+        border-top: 10px solid rgb(139, 180, 45);
+        padding: 1rem 2rem;
+
+    }
+
+    .mainnav {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    nav > a,
+    nav > a:visited,
+    nav > a:link {
+
+        color: rgba(53, 56, 59, 1);
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        border-bottom: 1px dotted black;
+        width: 80vw;
+
+    }
+
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover {
+
+        color: rgb(139, 180, 45);
+    }
+
+    main {
+
+       
+        padding: 1rem 2rem;
+        border-bottom: 10px solid rgb(139, 180, 45);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    section p {
+
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+
+
+
+    section > h1 {
+
+
+        color: rgb(139, 180, 45);
+    }
+
+    section > h2 {
+
+        color: rgb(139, 180, 45);
+    }
+
+
+
+    footer {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .foot dd {
+
+        font-size: 0.889em;
+    }
+
+    .foot dt {
+        color: rgba(53, 56, 59, 1);
+        font-size: 1.266em;
+    }
+
+
+    input {
+        width: 200px;
+        height: 25px;
+    }
+
+    select {
+        width: 200px;
+        height: 25px;
+
+    }
+
+    textarea {
+        width: 200px;
+        height: 100px;
+
+    }
+
+    .foot dl {
+
+        margin: 0rem 1rem 1rem 0rem;
+        
+
+    }
+    
+    
+
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+
+
+    header {
+
+        border-top: 10px solid rgb(0, 167, 204);
+
+    }
+
+    nav > a:hover {
+
+        color: rgb(0, 167, 204);
+    }
+
+
+
+    main {
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-row-gap: 0;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        border-bottom: 10px solid rgb(0, 167, 204);
+    }
+
+
+    img {
+
+        width: 40%;
+
+    }
+
+    section > h1 {
+
+
+        color: rgb(0, 167, 204);
+    }
+
+    section > h2 {
+
+
+        color: rgb(0, 167, 204);
+    }
+
+    .minor-segment img {
+        float: none;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .first {
+        grid-column: 1/span 2;
+    }
+
+    footer {
+
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+        align-items: flex-start;
+    }
+
+    .foot dl {
+
+        margin: 0rem 5rem 0rem 5rem;
+
+    }
+
+    
+}
+
+@media (min-width: 1000px) {
+
+
+    img {
+
+        width: 40%;
+
+    }
+}
